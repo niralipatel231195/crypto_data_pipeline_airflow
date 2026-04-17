@@ -38,3 +38,8 @@ API → Extract → Transform → Load → PostgreSQL
 - Handle duplicates using:
 ```sql
 ON CONFLICT (id) DO NOTHING
+
+## Install Dependencies
+
+pip install -r requirements.txt \
+  --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.9.0/constraints-3.12.txt
